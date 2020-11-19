@@ -1,6 +1,5 @@
-# Quasar App (call-git-api)
-
-A Quasar Framework app
+# call-git-api
+## Using WebSql for logs, using chrome browser please.
 
 ## Install the dependencies
 ```bash

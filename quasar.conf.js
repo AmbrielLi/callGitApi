@@ -44,6 +44,7 @@ module.exports = function (/* ctx */) {
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
+      scopeHoisting: true,
       vueRouterMode: 'history', // available values: 'hash', 'history'
 
       // transpile: false,
@@ -95,7 +96,12 @@ module.exports = function (/* ctx */) {
       // (like functional components as one of the examples),
       // you can manually specify Quasar components/directives to be available everywhere:
       //
-      // components: [],
+      components: [
+        'QTable',
+        'QTh',
+        'QTr',
+        'QTd'
+      ],
       // directives: [],
 
       // Quasar plugins
