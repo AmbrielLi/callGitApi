@@ -77,7 +77,6 @@ export default {
       })
     },
     addLog (db, obj) {
-      // const db = openDatabase('callLogs', '1.0', 'logs of API calling', 2 * 1024 * 1024)
       db.transaction(tx => {
         tx.executeSql('INSERT INTO LOGS (id, startAt, endAt, status, error) VALUES ("' + obj.id + '", "' +
           obj.startAt + '", "' + obj.endAt + '", "' + obj.status + '", "' + obj.error + '")')
